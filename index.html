@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X MOTORS</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-row space-between">
+                <div class="logo">
+                    <img src="./images/xlogo.png" alt="">
+                    <h2 class="logo-title">MOTORS</h3>
+                </div>
+                <div class="search-bar">
+                    <i class="fi fi-rr-search icon"></i>
+                    <input type="text" name="" placeholder="Pesquisar por produto, categoria, marca ou moto" id="">
+                </div>
+                <div class="user-icons">
+                    <div class="bike-info">
+                        <div class="bike">
+                            <div class="items-icon">
+                                <span>1</span>
+                            </div>
+                            <i class="fi fi-rs-motorcycle icon"></i>
+                        </div>
+                        <a href="#" class="icon-title">Filtrar Compatível</a>
+
+                    </div>
+                    <div class="cart-info">
+                        <div class="cart">
+                            <div class="items-icon">
+                                <span>3</span>
+                            </div>
+                            <i class="fi fi-rs-shopping-cart icon"></i>
+                        </div>
+                        <a href="#" class="icon-title">Carrinho</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+        <div class="banner">
+            <h1 class="banner-title">PRODUTOS</h1>
+            <h4 class="page-index">INÍCIO > <span class="red-text">LOJA</span></h4>
+            <img src="./images/banner.webp" alt="">
+        </div>
+        <div class="products-container">
+            <div class="filter-column">
+                <div class="search-field">
+                    <input type="text" name="" placeholder="Pesquisar" id="">
+                    <i class="fi fi-rr-search icon"></i>
+
+                </div>
+                <div class="filter-panel">
+                    <h2 class="filter-title">
+                        Filtrar por preço
+                    </h2>
+                    <hr>
+                    <div class="price-slider">
+                        <input type="range" min="1" max="5000" value="1500" id="price-slider" />
+                        <div class="slider-data">
+                            <span class="price-max">FILTRO</span>
+                            <div id="slider-value" class="price-slider-value">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-panel">
+                    <h2 class="filter-title">
+                        Categorias
+                    </h2>
+                    <hr>
+                    <div class="category-field">
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Disco de freio</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Escapamento</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Kit Cilindro</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Equipamento</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Suspensão</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Pneu</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Peças Paralelas</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="filter-panel">
+                    <h2 class="filter-title">
+                        Marcas
+                    </h2>
+                    <hr>
+                    <div class="category-field">
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Honda</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Yamaha</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Suzuki</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Bajaj</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">X11</a>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" name="" id="">
+                            <a href="">Norisk</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="products-list">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product_cap_stormer.avif" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Capacete Stormer</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$899</span>
+                            <span class="product-price-new">R$637</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-capa-chuva.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Capa de chuva</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$319</span>
+                            <span class="product-price-new">R$189</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                    
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-capacete-norisk-branco.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Capacete Norisk Branco</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$724</span>
+                            <span class="product-price-new">R$620</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-jaqueta-x11.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Jaqueta X11 Impermeável</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$1879</span>
+                            <span class="product-price-new">R$1347</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-jaqueta-tutto.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Jaqueta Tutto</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$999</span>
+                            <span class="product-price-new">R$690</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-bateria.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Bateria Pioneiro 12v</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$209,90</span>
+                            <span class="product-price-new">R$125,99</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-filtro-esportivo.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Filtro Esportivo</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$300</span>
+                            <span class="product-price-new">R$98,49</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-luva-x11-nitro.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Luva X11 Nitro</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$683</span>
+                            <span class="product-price-new">R$601,99</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-luva-x11.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Luva X11</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$450</span>
+                            <span class="product-price-new">R$430</span>
+                        </div>
+                    </div>
+                    <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-segunda-pele-x11.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Segunda pele X11</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$390</span>
+                            <span class="product-price-new">R$289</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-viseira-fume.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Viseira fumê</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$89</span>
+                            <span class="product-price-new">R$37,90</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-capacete-norisk.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Capacete Norisk Preto</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$999</span>
+                            <span class="product-price-new">R$835</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product_kit_pistao.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Kit Pistão</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$1500</span>
+                            <span class="product-price-new">R$1000</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product_rolamento.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Rolamentos</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$234</span>
+                            <span class="product-price-new">R$189</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="./images/products/product-oleo.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            <a href="">Oleo Mobil</a>
+                        </h3>
+                        <div class="product-price">
+                            <span class="product-price-old">R$59,90</span>
+                            <span class="product-price-new">R$30,90</span>
+                        </div>
+                        <button class="cart-button" type="button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-header">
+                <h1>Sobre</h1>
+                <hr>
+            </div>
+            <div class="about-info">
+                <img src="./images/urban-rider-london-store-2_1.webp" alt="">
+                <div class="about-text">
+                    <p>
+                        A Xmotors é mais do que uma loja de produtos para motos;
+                         é um ponto de encontro para os apaixonados pelo ronco dos motores
+                          e a liberdade da estrada. Fundada por entusiastas das duas rodas,
+                           a Xmotors carrega em seu DNA a paixão pela velocidade e o respeito pela segurança.
+                    </p>
+                    <br>
+                    <p><p>Oferecemos uma linha completa de capacetes, jaquetas, luvas e botas, todos testados e aprovados por nossa equipe de especialistas. Sabemos que o estilo é pessoal, por isso, nossa variedade atende desde o urbano sofisticado até o aventureiro off-road.</p></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/price-slider.js"></script>
+
+</body>
+
+</html>

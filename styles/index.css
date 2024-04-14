@@ -1,0 +1,1017 @@
+@import url("./fonts.css");
+@import url("./globalStyles.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    body {
+        background: rgb(252, 252, 252);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: auto;
+        width: 100vw;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #000000;
+        background: white;
+        padding: 0.8rem 2rem;
+        font-family: 'Poppins';
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.185);
+    }
+
+    .space-between {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
+    .logo img {
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .logo-title {
+        font-family: "Russo One";
+        font-weight: 400;
+    }
+
+
+
+    .search-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* margin-left:4rem; */
+        background: rgba(233, 233, 233, 0.445);
+        color: black;
+        font-family: 'Poppins';
+        font-weight: 400;
+        padding: 1.22rem 1.3rem;
+        border-radius: 29px;
+        width: 29rem;
+    }
+
+    .search-bar .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-bar input {
+        border: none;
+        background: none;
+        outline: none;
+        margin-left: 0.5rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .search-bar input::placeholder {
+        font-family: 'Poppins';
+        font-weight: 300;
+        color: rgb(27, 27, 27);
+    }
+
+    .user-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 2rem;
+        gap: 3rem;
+        height: 100%;
+    }
+
+    .cart-info,
+    .bike-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bike-info .icon {
+        font-size: 2rem;
+        color: rgb(48, 48, 48);
+    }
+
+    .cart-info .icon {
+        font-size: 1.8rem;
+        color: rgb(48, 48, 48);
+    }
+
+    .user-icons .items-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 2rem;
+        top: 1rem;
+        color: white;
+        background: rgb(255, 88, 88);
+        border-radius: 50%;
+        height: 1.5rem;
+        width: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .icon-title,
+    .icon-title:visited {
+        margin-top: 1.1rem;
+        margin-left: 2rem;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.8rem;
+        color: rgb(105, 105, 105);
+    }
+
+    .banner {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 17rem;
+        overflow: hidden;
+    }
+
+    .banner img {
+        filter: blur(3px);
+        z-index: 1;
+    }
+
+    .banner .banner-title {
+        position: absolute;
+        z-index: 2;
+        top: 30%;
+        font-family: 'Inter';
+        color: white;
+        font-size: 3.5rem;
+    }
+
+    .banner .page-index {
+        position: absolute;
+        top: 60%;
+        z-index: 2;
+        font-family: 'Inter';
+        font-weight: 400;
+        color: white;
+        /* font-size: 3.5rem; */
+    }
+
+    .red-text {
+        color: rgb(255, 67, 67);
+    }
+
+    .products-container {
+        display: flex;
+        padding: 1rem 3rem;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        font-family: 'Inter';
+        margin-top: 2rem;
+    }
+
+    .filter-column {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+    .filter-column .search-field {
+        display: flex;
+        align-items: center;
+        padding: 0.8rem 0.75rem;
+        border: var(--section-border);
+    }
+
+    .filter-column .search-field .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(88, 88, 88);
+    }
+
+    .filter-column .search-field input {
+        background: none;
+        outline: none;
+        border: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .filter-column .search-field input::placeholder {
+        font-family: 'Poppins';
+        font-weight: 500;
+    }
+
+    .filter-column hr {
+        margin: 1rem 0 2rem 0;
+        border-color: rgba(0, 0, 0, 0.096);
+    }
+
+    .filter-panel {
+        display: flex;
+        flex-direction: column;
+        margin-top: var(--top-section-margin);
+        padding: 1rem;
+        border: var(--section-border);
+    }
+
+    .filter-panel .filter-title {
+        color: rgb(43, 43, 43);
+    }
+
+    .filter-panel .price-slider {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+
+    #price-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        cursor: pointer;
+        outline: none;
+        height: 0.7rem;
+        background: #ccc;
+    }
+
+    #price-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 1.4rem;
+        width: 1.4rem;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        transition: .2s ease-in-out;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1)
+    }
+
+
+    #price-slider::-webkit-slider-thumb:hover {
+        box-shadow: 0 0 0 5px rgba(252, 16, 16, 0.288)
+    }
+
+    #price-slider:focus::-webkit-slider-thumb {
+        box-shadow: 0 0 0 5px rgba(252, 16, 16, 0.199)
+    }
+
+    .price-slider-value {
+        min-width: fit-content;
+    }
+
+    .slider-data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .price-max {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 0.89rem;
+        background: var(--red-bg);
+        color: white;
+        padding: 0.4rem 0.5rem;
+
+    }
+
+    .filter-panel .category-field {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .category-field .category a,
+    .category a:visited {
+        font-family: 'Inter';
+        text-decoration: none;
+        color: rgb(112, 107, 107);
+        font-weight: 400;
+    }
+
+    .category-field .category {
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    .products-container .products-list {
+        display: flex;
+        padding-left: 2rem;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .products-list .product {
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 23rem;
+        border: 1px solid rgba(0, 0, 0, 0.11);
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .product:hover {
+        transform: scale(1.045);
+    }
+
+    .product .product-image {
+        max-height: 68%;
+        overflow: hidden;
+    }
+
+    .products-list .product .product-image img {
+        max-width: 100%;
+    }
+
+    .products-list .product .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.8rem;
+        gap: 0.5rem;
+    }
+
+    .products-list .product .product-title a,
+    a:visited {
+        text-decoration: none;
+        color: rgb(17, 17, 17);
+    }
+
+    .product .product-price {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .product .product-price-old {
+        color: rgb(148, 148, 148);
+        text-decoration: line-through;
+        font-weight: bold;
+    }
+
+    .product .product-price-new {
+        color: rgb(233, 28, 28);
+        font-weight: 600;
+    }
+
+    .product .cart-button {
+        width: 80%;
+        font-family: 'Poppins';
+        font-weight: 500;
+        color: white;
+        background: rgb(34, 34, 34);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .product .cart-button:hover {
+        background: rgb(75, 75, 75);
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins';
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .about-header hr {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .about-info {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .about-info img {
+        height: 20rem;
+    }
+}
+
+/* tablet*/
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+
+    body {
+        background: rgb(252, 252, 252);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: auto;
+        width: 100vw;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #000000;
+        background: white;
+        padding: 0.8rem 0.5rem;
+        font-family: 'Poppins';
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.185);
+    }
+
+    .space-between {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        padding-left: 1rem;
+    }
+
+    .logo img {
+        height: 1.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .logo-title {
+        font-family: "Russo One";
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+
+
+    .search-bar {
+        display: none;
+    }
+
+
+    .user-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 2rem;
+        gap: 2rem;
+        height: 100%;
+    }
+
+    .cart-info,
+    .bike-info {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+    }
+
+    .bike-info {
+        display: flex;
+        color: rgb(48, 48, 48);
+    }
+
+    .cart-info .icon {
+        color: rgb(48, 48, 48);
+    }
+
+    .user-icons .items-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 2rem;
+        top: 1rem;
+        color: white;
+        background: rgb(255, 88, 88);
+        border-radius: 50%;
+        height: 1.5rem;
+        width: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .icon-title,
+    .icon-title:visited {
+        margin-top: 1.1rem;
+        margin-left: 2rem;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.8rem;
+        color: rgb(105, 105, 105);
+    }
+
+    .banner {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 14rem;
+        overflow: hidden;
+    }
+
+    .banner img {
+        filter: blur(3px);
+        z-index: 1;
+    }
+
+    .banner .banner-title {
+        position: absolute;
+        z-index: 2;
+        top: 30%;
+        font-family: 'Inter';
+        color: white;
+        font-size: 3.5rem;
+    }
+
+    .banner .page-index {
+        position: absolute;
+        top: 60%;
+        z-index: 2;
+        font-family: 'Inter';
+        font-weight: 400;
+        color: white;
+        /* font-size: 3.5rem; */
+    }
+
+    .red-text {
+        color: rgb(255, 67, 67);
+    }
+
+    .products-container {
+        display: flex;
+        padding: 1rem 0.5rem;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        font-family: 'Inter';
+        margin-top: 2rem;
+    }
+
+    .filter-column {
+        display: none;
+    }
+
+    .products-container .products-list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1.3rem;
+        justify-content: center;
+    }
+
+    .products-list .product {
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+        height: 20rem;
+        border: 1px solid rgba(0, 0, 0, 0.11);
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .product:hover {
+        transform: scale(1.045);
+    }
+
+    .product .product-image {
+        display: flex;
+        width: 100%;
+        /* max-height: 68%; */
+        overflow: hidden;
+    }
+
+    .products-list .product .product-image img {
+        width: 100%;
+    }
+
+    .product-title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 3rem;
+        font-size: 1rem;
+        padding: 0 0.5rem;
+        text-align: center;
+    }
+
+    .products-list .product .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 0.8rem; */
+        max-height: 50%;
+        gap: 0.5rem;
+    }
+
+    .products-list .product .product-title a,
+    a:visited {
+        text-decoration: none;
+        color: rgb(17, 17, 17);
+    }
+
+    .product .product-price {
+        display: flex;
+        gap: 0.1rem;
+        margin-top: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .product .product-price-old {
+        color: rgb(148, 148, 148);
+        text-decoration: line-through;
+        font-weight: bold;
+    }
+
+    .product .product-price-new {
+        color: rgb(233, 28, 28);
+        font-weight: 600;
+    }
+
+    .product .cart-button {
+        width: 80%;
+        font-family: 'Poppins';
+        font-weight: 500;
+        color: white;
+        background: rgb(34, 34, 34);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 500ms;
+        /* margin-top: 1rem */
+    }
+
+
+
+    .product .cart-button:hover {
+        background: rgb(75, 75, 75);
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins';
+        width: 100%;
+        margin: 3rem auto;
+        padding: 1rem;
+    }
+
+    .about-header hr {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        /* padding: 1rem; */
+    }
+
+    .about-info img {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-info p {
+        padding: 1rem;
+    }
+
+
+}
+
+/* mobile */
+@media screen and (max-width: 640px) {
+
+    body {
+        background: rgb(252, 252, 252);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: auto;
+        width: 100vw;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #000000;
+        background: white;
+        padding: 0.8rem 0.5rem;
+        font-family: 'Poppins';
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.185);
+    }
+
+    .space-between {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
+    .logo img {
+        height: 1.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .logo-title {
+        font-family: "Russo One";
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+
+
+    .search-bar {
+        display: none;
+    }
+
+
+    .user-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* margin-right: 2rem; */
+        /* gap: 1rem; */
+        height: 100%;
+    }
+
+    .cart-info,
+    .bike-info {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+    }
+
+    .bike-info {
+        display: none;
+        color: rgb(48, 48, 48);
+    }
+
+    .cart-info .icon {
+        color: rgb(48, 48, 48);
+    }
+
+    .user-icons .items-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 2rem;
+        top: 1rem;
+        color: white;
+        background: rgb(255, 88, 88);
+        border-radius: 50%;
+        height: 1.5rem;
+        width: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .icon-title,
+    .icon-title:visited {
+        margin-top: 1.1rem;
+        margin-left: 2rem;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.8rem;
+        color: rgb(105, 105, 105);
+    }
+
+    .banner {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 14rem;
+        overflow: hidden;
+    }
+
+    .banner img {
+        filter: blur(3px);
+        z-index: 1;
+    }
+
+    .banner .banner-title {
+        position: absolute;
+        z-index: 2;
+        top: 30%;
+        font-family: 'Inter';
+        color: white;
+        font-size: 3.5rem;
+    }
+
+    .banner .page-index {
+        position: absolute;
+        top: 60%;
+        z-index: 2;
+        font-family: 'Inter';
+        font-weight: 400;
+        color: white;
+        /* font-size: 3.5rem; */
+    }
+
+    .red-text {
+        color: rgb(255, 67, 67);
+    }
+
+    .products-container {
+        display: flex;
+        padding: 1rem 0.5rem;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        font-family: 'Inter';
+        margin-top: 2rem;
+    }
+
+    .filter-column {
+        display: none;
+    }
+
+    .products-container .products-list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1.3rem;
+        justify-content: center;
+    }
+
+    .products-list .product {
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+        height: 20rem;
+        border: 1px solid rgba(0, 0, 0, 0.11);
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .product:hover {
+        transform: scale(1.045);
+    }
+
+    .product .product-image {
+        display: flex;
+        width: 100%;
+        /* max-height: 68%; */
+        overflow: hidden;
+    }
+
+    .products-list .product .product-image img {
+        width: 100%;
+    }
+
+    .product-title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 3rem;
+        font-size: 1rem;
+        padding: 0 0.5rem;
+        text-align: center;
+    }
+
+    .products-list .product .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 0.8rem; */
+        max-height: 50%;
+        gap: 0.5rem;
+    }
+
+    .products-list .product .product-title a,
+    a:visited {
+        text-decoration: none;
+        color: rgb(17, 17, 17);
+    }
+
+    .product .product-price {
+        display: flex;
+        gap: 0.1rem;
+        margin-top: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .product .product-price-old {
+        color: rgb(148, 148, 148);
+        text-decoration: line-through;
+        font-weight: bold;
+    }
+
+    .product .product-price-new {
+        color: rgb(233, 28, 28);
+        font-weight: 600;
+    }
+
+    .product .cart-button {
+        width: 80%;
+        font-family: 'Poppins';
+        font-weight: 500;
+        color: white;
+        background: rgb(34, 34, 34);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 500ms;
+        /* margin-top: 1rem */
+    }
+
+
+
+    .product .cart-button:hover {
+        background: rgb(75, 75, 75);
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins';
+        width: 100%;
+        margin: 3rem auto;
+        padding: 1rem;
+    }
+
+    .about-header hr {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        /* padding: 1rem; */
+    }
+
+    .about-info img {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-info p {
+        padding: 1rem;
+    }
+
+}
